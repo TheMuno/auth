@@ -219,6 +219,8 @@ async function handleAccountLinking(email, pendingCred) {
   window.pendingCredential = pendingCred;
 }
 
+console.log('linkPendingCredential sorted!') 
+
 async function linkPendingCredential() {
   if (window.pendingCredential && auth.currentUser) {
     try {
