@@ -219,8 +219,6 @@ async function handleAccountLinking(email, pendingCred) {
   window.pendingCredential = pendingCred;
 }
 
-import { linkWithCredential } from "firebase/auth";
-
 async function linkPendingCredential() {
   if (window.pendingCredential && auth.currentUser) {
     try {
